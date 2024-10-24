@@ -1,0 +1,174 @@
+# ReactNativeCICD 🚀
+
+[![Udemy Course](https://img.shields.io/badge/Udemy-CI%2FCD%20for%20React%20Native-blue)](https://www.udemy.com/course/continuous-integration-and-continuous-delivery-for-react-native/?couponCode=2021PM25)
+
+## 📖 Table of Contents
+
+- [Project Overview](#📖-project-overview)
+- [Course Overview](#📖-course-overview)
+- [Key Features](#✨-key-features)
+- [Tools & Technologies](#🛠️-tools--technologies)
+- [What You'll Learn](#📚-what-youll-learn)
+- [Why CI/CD Matters](#💡-why-cicd-matters)
+- [Target Audience](#🎯-target-audience)
+- [Project Content](#🛠️-project-content)
+- [Branching Structure/Guidelines](#📊-branching-structureguidelines)
+- [Project Structure](#📂-project-structure)
+- [Getting Started](#🚀-getting-started)
+- [Course Link](#📺-course-link)
+- [Give a Star!](#🌟-give-a-star)
+
+**ReactNativeCICD** is a project developed as part of the **Master CI/CD for React Native** course. The project focuses on setting up **Continuous Integration** and **Continuous Delivery** pipelines for React Native applications, enabling automated workflows for testing, building, and deployment.
+
+## 📖 Course Overview
+
+This project demonstrates how to streamline your React Native development process by setting up CI/CD pipelines. You will learn:
+
+> **<span style="color:red;">⚠️ Important Note:</span>**
+>
+> In this course, the instructor uses **Visual Studio App Center** for setting up CI/CD pipelines. However, please note that **Visual Studio App Center is scheduled for retirement on March 31, 2025**. For more information and recommended alternatives, visit [Visual Studio App Center's official website](https://appcenter.ms/).
+
+- **Automated Testing** with unit and integration tests.
+- **CI/CD Pipeline Configuration** using platforms like **CircleCI**, **Bitrise**, and **GitHub Actions**.
+- **Versioning and Release Management** for Android and iOS apps.
+- **Automated App Deployment** to **Google Play Store** and **Apple App Store**.
+
+The course emphasizes mastering **TypeScript** and **CI/CD** fundamentals without the distraction of trivial setups. It provides a hands-on approach with **real-world code challenges** and concise explanations, helping you enhance your skills at your own pace.
+
+## ✨ Key Features
+
+- Hands-on implementation of CI/CD pipelines.
+- Automated testing, building, and deploying React Native apps.
+- Use of tools like **AppCenter**.
+- Workflows optimized for both Android and iOS.
+
+## 🛠️ Tools & Technologies
+
+- **Git**: Version Control System (VCS).
+- **AppCenter**: Continuous integration and delivery platform.
+
+## 📚 What You'll Learn
+
+- How to create CI/CD pipelines for React Native apps.
+- Automating the entire build-test-deploy process.
+
+## 💡 Why CI/CD Matters
+
+**Continuous Integration** (CI) and **Continuous Delivery** (CD) ensure that:
+
+- Your app is always production-ready.
+- Bugs are caught early with automated testing.
+- Manual deployment processes are minimized.
+- Features are delivered faster with confidence.
+
+## 🎯 Target Audience
+
+This project is ideal for:
+
+- React Native developers wanting to automate their app release processes.
+- Engineers interested in learning CI/CD pipelines for mobile apps.
+- Developers aiming to always keep their app ready for production.
+
+---
+
+## 🛠️ Project Content
+
+- **Navigation**: Stack navigation is implemented with two screens (Home, About) for basic navigation structure.
+- **Components**: Reusable components with styles and types.
+- **Path Aliases**: Path aliases set up for cleaner and more manageable imports (e.g., `@screens`).
+
+## 📊 Branching Structure/Guidelines
+
+- **`main`**: Stable, production-ready code.
+- **`develop`**: Latest development features, ready for testing.
+- **`test`**: Testing branch.
+- **`feature/<name>`**: New features should branch off `develop`.
+
+## 📂 Project Structure
+
+```bash
+🗃️ ReactNativeCICD
+┣ 📂__tests__
+┣ 📂android
+┣ 📂app
+┃ ┣ 📂src
+┃ ┃ ┗ 📂main
+┃ ┃   ┣ 📂assets
+┃ ┗   ┗ ┗ 📜appcenter-config.json # AppCenter configuration file (Contains Android app secret)
+┣ 📂ios
+┣ ┗ 📜AppCenter-Config.plist  # AppCenter configuration file (Contains iOS app secret)
+┣ 📂src
+┃ ┣ 📂AppContent
+┃ ┃ ┗ 📜App.tsx
+┃ ┣ 📂components
+┃ ┃ ┣ 📂Button
+┃ ┃ ┣ 📂Divider
+┃ ┃ ┣ 📂Screen
+┃ ┃ ┣ 📂Text
+┃ ┃ ┗ 📜index.ts
+┃ ┣ 📂enums
+┃ ┣ 📂Navigation
+┃ ┣ 📂Providers
+┃ ┗ 📂screens
+┃   ┣ 📂About
+┃   ┣ 📂AppCenter
+┃   ┣ 📂Counter
+┃   ┣ 📂Home
+┗   ┗ 📜index.ts
+```
+
+## 🚀 Getting Started
+
+Follow these steps to clone the project and set up CI/CD for your React Native app:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-repo/ReactNativeCICD.git
+   ```
+
+2. Change directory to project:
+
+   ```bash
+   cd ReactNativeCICD
+   ```
+
+3. Install dependencies:
+
+   For **npm** users:
+
+   ```bash
+   npm install
+   ```
+
+   For **Yarn** users:
+
+   ```bash
+   yarn install
+   ```
+
+4. **iOS Setup**: (For users running on iOS)
+
+   If you're developing on iOS, make sure to install CocoaPods dependencies. Navigate to the `ios` directory and run:
+
+   ```bash
+   cd ios
+   pod install
+   cd ..
+   ```
+
+Now, you can run your project on an iOS simulator or device.
+
+## 📺 Course Link
+
+Start mastering CI/CD for React Native by enrolling in the full course here:
+
+[![Enroll Now](https://img.shields.io/badge/Enroll-Now-green)](https://www.udemy.com/course/continuous-integration-and-continuous-delivery-for-react-native/?couponCode=2021PM25)
+
+---
+
+## 🌟 Give a Star!
+
+If you found this project helpful or informative, feel free to **star** this repository and share it with others!
+
+---
