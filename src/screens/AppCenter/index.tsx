@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {NativeStackScreenProps} from 'react-native-screens/lib/typescript/native-stack/types';
 import {MainStackParamList} from '@src/navigation/types';
 import {SCREEN_NAME} from '@src/enums';
@@ -8,9 +8,22 @@ import Crashes from 'appcenter-crashes';
 import Analytics from 'appcenter-analytics';
 import styles from './styles';
 
+const internetOptions = ['Cellular', 'WIFI'];
+const gpsOptions = ['on', 'off'];
+
 type Props = NativeStackScreenProps<MainStackParamList, SCREEN_NAME.APP_CENTER>;
 
 const AppCenter = ({}: Props) => {
+  const handleTriggerEventPress = useCallback(() => {
+    const randomInternet =
+      internetOptions[Math.floor(Math.random() * internetOptions.length)];
+    const randomGPS = gpsOptions[Math.floor(Math.random() * gpsOptions.length)];
+
+    Analytics.trackEvent('Event X triggered successfully', {
+      Internet: randomInternet,
+      GPS: randomGPS,
+    });
+  }, []);
   return (
     <Screen>
       <View style={styles.container}>
@@ -36,19 +49,7 @@ const AppCenter = ({}: Props) => {
           navigation. The data is sent to AppCenter for further analysis to help
           enhance app performance and improve the overall user experience.
         </Text>
-        <Button
-          text="Trigger Event X"
-          onPress={() => {
-            Analytics.trackEvent(
-              'Event X triggered successfully',
-              // Send any information with event to help in tracking and improve the overall user experience.s
-              {
-                Internet: 'Cellular',
-                GPS: 'on',
-              },
-            );
-          }}
-        />
+        <Button text="Trigger Event X" onPress={handleTriggerEventPress} />
       </View>
     </Screen>
   );
