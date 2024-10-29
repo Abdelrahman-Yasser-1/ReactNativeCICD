@@ -1,6 +1,6 @@
 # ReactNativeCICD 🚀
 
-[![Udemy](https://img.shields.io/badge/Udemy-Master%20CI%2FCD%20for%20React%20Native-blue?logo=udemy)](https://www.udemy.com/course/continuous-integration-and-continuous-delivery-for-react-native/?couponCode=2021PM25)
+[![Udemy Course](https://img.shields.io/badge/Udemy-CI%2FCD%20for%20React%20Native-blue)](https://www.udemy.com/course/continuous-integration-and-continuous-delivery-for-react-native/?couponCode=2021PM25)
 
 ## 📋 Table of Contents
 
@@ -21,20 +21,14 @@
 
 ## 📖 Course Overview
 
-This project demonstrates how to streamline your React Native development process by setting up CI/CD pipelines. You will learn:
+This project demonstrates how to streamline your React Native development process by setting up CI/CD pipelines.
+You can see [screenshots](https://github.com/Abdelrahman-Yasser-1/ReactNativeCICD/blob/dev/AppCenter_Build_Guide.md) for building process and badges for building status.
 
-> **<span style="color:red;">🚨 Important Note:</span>**
+> **<span style="color:red;">⚠️ Important Note:</span>**
 >
 > In this course, the instructor uses **Visual Studio App Center** for setting up CI/CD pipelines. However, please note that **Visual Studio App Center is scheduled for retirement on March 31, 2025**. For more information and recommended alternatives, visit [Visual Studio App Center's official website](https://appcenter.ms/).
 >
-> The CI/CD principles covered in this course are versatile and can be applied with various tools, so the knowledge you gain here will remain valuable beyond App Center. You’ll be able to implement similar CI/CD workflows with alternative platforms such as GitHub Actions, Bitrise, or CircleCI.
-
-- **Automated Testing** with unit and integration tests.
-- **CI/CD Pipeline Configuration** using platforms like **CircleCI**, **Bitrise**, and **GitHub Actions**.
-- **Versioning and Release Management** for Android and iOS apps.
-- **Automated App Deployment** to **Google Play Store** and **Apple App Store**.
-
-The course emphasizes mastering **TypeScript** and **CI/CD** fundamentals without the distraction of trivial setups. It provides a hands-on approach with **real-world code challenges** and concise explanations, helping you enhance your skills at your own pace.
+> The CI/CD principles covered in this course are versatile and can be applied with various tools and services, so the knowledge you gain here will remain valuable beyond App Center. You’ll be able to implement similar CI/CD workflows with alternative platforms such as GitHub Actions, Bitrise, or CircleCI.
 
 ## ✨ Key Features
 
