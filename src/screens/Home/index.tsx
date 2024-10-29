@@ -1,10 +1,10 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import {View} from 'react-native';
 import styles from './styles';
 import {NativeStackScreenProps} from 'react-native-screens/lib/typescript/native-stack/types';
 import {MainStackParamList} from '@src/navigation/types';
 import {SCREEN_NAME} from '@src/enums';
-import {Button, Divider, Screen, Text} from '@src/components';
+import {Button, Divider, Screen, Text, TextInput} from '@src/components';
 
 type Props = NativeStackScreenProps<MainStackParamList, SCREEN_NAME.HOME>;
 
@@ -25,6 +25,7 @@ const Home = ({navigation}: Props) => {
     [navigation],
   );
 
+  const [inputValue, setInputValue] = useState<string>('');
   return (
     <Screen>
       <View style={styles.container}>
@@ -37,9 +38,21 @@ const Home = ({navigation}: Props) => {
             onPress={() => handleNavigate(button.screen)}
           />
         ))}
+        <Divider />
+        <Text variant="title">Section 5: Continuous Quality (CQ)</Text>
+        <Text variant="info">
+          I added this at home screen not in separated screen because of UI
+          testing problem in xcode and Android Studio
+        </Text>
+        <TextInput
+          placeholder="Enter your name"
+          value={inputValue}
+          onChangeText={setInputValue}
+        />
+        {inputValue && <Text>{`Welcome to CICD, ${inputValue}`}</Text>}
+        <Divider />
       </View>
     </Screen>
   );
 };
-
 export default Home;
